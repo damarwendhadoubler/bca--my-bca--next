@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@theme {
+  /* Font configuration */
+  --font-primary: 'Inter', system-ui, sans-serif;
+
+  /* Primary color palette - converted to modern oklch format */
+  --color-primary-50: oklch(0.97 0.014 254.604); /* #eff6ff */
+  --color-primary-100: oklch(0.932 0.032 255.585); /* #dbeafe */
+  --color-primary-200: oklch(0.882 0.059 254.128); /* #bfdbfe */
+  --color-primary-300: oklch(0.809 0.105 251.813); /* #93c5fd */
+  --color-primary-400: oklch(0.707 0.165 254.624); /* #60a5fa */
+  --color-primary-500: oklch(0.623 0.214 259.815); /* #3b82f6 */
+  --color-primary-600: oklch(0.546 0.245 262.881); /* #2563eb */
+  --color-primary-700: oklch(0.488 0.243 264.376); /* #1d4ed8 */
+  --color-primary-800: oklch(0.424 0.199 265.638); /* #1e40af */
+  --color-primary-900: oklch(0.379 0.146 265.522); /* #1e3a8a */
+  --color-primary-950: oklch(0.282 0.091 267.935); /* #172554 */
+
+  /* Dark color */
+  --color-dark: #222222;
+}
+
+@layer base {
+  /* inter var - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: block;
+    src: url('/fonts/inter-var-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+
+  .layout {
+    /* 1100px */
+    max-width: 68.75rem;
+    @apply mx-auto w-11/12;
+  }
+}
