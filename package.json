@@ -18,10 +18,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@doubler.studio/chaebol-ui-package": "^0.0.5",
+    "@types/react-dom": "^18.3.7",
     "clsx": "^2.0.0",
     "next": "^15.4.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tailwind-merge": "^2.6.0",
     "zod": "^3.24.1"
   },
@@ -33,7 +35,7 @@
     "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^15.0.7",
-    "@types/react": "^19.1.8",
+    "@types/react": "^18.3.23",
     "@types/testing-library__jest-dom": "^5.14.9",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
@@ -62,5 +64,15 @@
     "**/*.{json,css,scss,md,webmanifest}": [
       "prettier -w"
     ]
+  },
+  "peerDependencies": {
+    "react": "18",
+    "react-dom": "18"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    }
   }
 }
